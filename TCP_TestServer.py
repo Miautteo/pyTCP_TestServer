@@ -3,8 +3,8 @@ import socket as S
 encoding = "utf-8"
 
 ##Establish listen on Port
-socket = S.socket(S.AF_INET, S.SOCK_STREAM)
-socket.bind(('localhost', 11000))
+socket = S.socket(S.AF_INET6, S.SOCK_STREAM, 0)
+socket.bind(('2a02:908:f10:b440:d8fe:715f:f16:8ec9', 11000, 0, 0))
 socket.listen(5)
 
 while True:
